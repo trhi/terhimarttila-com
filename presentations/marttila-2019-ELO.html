@@ -322,13 +322,17 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+
 				dependencies: [
 					{ src: 'reveal/plugin/markdown/marked.js' },
 					{ src: 'reveal/plugin/markdown/markdown.js' },
 					{ src: 'reveal/plugin/notes/notes.js', async: true },
 					{ src: 'reveal/plugin/highlight/highlight.js', async: true },
 					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true }
-				]
+				],
+				pdfSeparateFragments: false,
+				pdfMaxPagesPerSlide: 1,
+
 			});
 		</script>
 	</body>
